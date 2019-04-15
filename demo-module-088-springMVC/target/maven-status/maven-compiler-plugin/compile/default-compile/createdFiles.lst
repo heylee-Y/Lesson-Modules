@@ -1,0 +1,4 @@
+config/SpringMVCInitializer.class
+model/User.class
+controller/HelloController.class
+config/SpringMVCConfiguration.class

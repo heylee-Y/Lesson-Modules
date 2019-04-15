@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="spring"/>
+    <!--<aop:aspectj-autoproxy />-->
+
+    <bean name="logAspect" class="spring.aspectJ.LoggingAspect"/>
+
+    <bean name="source" class="spring.pojo.Source">
+        <property name="fruit" value="橙子"/>
+        <property name="sugar" value="多糖"/>
+        <property name="size" value="超大杯"/>
+    </bean>
+
+    <bean name="hijackBeforeMethodBean" class="spring.aop.HijackBeforeMethod"/>
+    <bean name="hijackAroundMethodBeanAdvice" class="spring.aop.HijackAroundMethod"/>
+
+    <bean name="sourceCut" class="org.springframework.aop.support.NameMatchMethodPointcut">
+        <property name="mappedName" value="printFruit"/>
+    </bean>
+    <bean name="sourceAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+        <property name="pointcut" ref="sourceCut"/>
+        <property name="advice" ref="hijackAroundMethodBeanAdvice"/>
+    </bean>
+
+    <!--<bean name="sourceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="source"/>
+        <property name="interceptorNames">
+            <list>
+                &lt;!&ndash;<value>hijackBeforeMethodBean</value>&ndash;&gt;
+                &lt;!&ndash;<value>hijackAroundMethodBeanAdvice</value>&ndash;&gt;
+                <value>sourceAdvisor</value>
+            </list>
+        </property>
+    </bean>-->
+
+    <!--
+    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="beanNames">
+            <list>
+                <value>*rce</value>
+            </list>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>sourceAdvisor</value>
+            </list>
+        </property>
+    </bean>
+    -->
+
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+
+    <!--自动装配 bean-->
+    <!-- 1. no manual ref-->
+    <!--
+    <bean name="juiceMaker" class="spring.pojo.JuiceMaker">
+        <property name="source" ref="source"/>
+    </bean>
+    -->
+
+    <!-- 2. byName -->
+    <!--<bean name="juiceMaker" class="spring.pojo.JuiceMaker" autowire="byName"/>-->
+
+    <!-- 3. byType -->
+    <!--<bean name="juiceMaker" class="spring.pojo.JuiceMaker" autowire="byType"/>-->
+
+    <!-- @AutoWired -->
+    <bean name="juiceMaker" class="spring.pojo.JuiceMaker" init-method="initIt"/>
+
+    <bean name="demoUserDao" class="spring.dao.DemoUserDaoImpl"/>
+
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://localhost:5432/postgres"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="postgres"/>
+    </bean>
+
+    <!-- Spring EL as XML format-->
+    <!--<bean id="itemBean" class="spring.pojo.Item">-->
+    <!--<property name="name" value="orange"/>-->
+    <!--<property name="qty" value="10"/>-->
+    <!--</bean>-->
+    <!--<bean id="customerBean" class="spring.pojo.Customer">-->
+    <!--<property name="item" value="#{itemBean}"/>-->
+    <!--<property name="itemName" value="#{itemBean.name}"/>-->
+    <!--</bean>-->
+
+    <bean id="itemBean" class="spring.pojo.Item"/>
+    <bean id="customerBean" class="spring.pojo.Customer"/>
+
+</beans>

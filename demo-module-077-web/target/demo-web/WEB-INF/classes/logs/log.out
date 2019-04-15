@@ -1,0 +1,4 @@
+2019-01-09 23:48:34.549  INFO demo.LogTest:11 - Cool!!! This is a info log message.
+2019-01-09 23:49:30.173  INFO demo.LogTest:11 - Cool!!! This is a info log message.
+2019-01-09 23:49:30.177  WARN demo.LogTest:13 - Cool!!! This is a warning log message.
+2019-01-09 23:49:30.177 ERROR demo.LogTest:15 - Cool!!! This is a error log message.

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:rich="http://richfaces.org/rich"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>fuck</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <h:inputText id="name" value="#{user.name}"/>
+        <h:commandButton value="Welcome Me">
+            <f:ajax event="keyup" execute="@this" render="output" />
+        </h:commandButton>
+        <h2><h:outputText id="output" value="#{user.sayName}" /></h2>
+    </h:form>
+
+    <h:outputLabel value="fuck"/>
+
+
+
+    <h:selectOneMenu>
+        <f:selectItem itemValue="O" itemLabel="Originator"/>
+        <f:selectItem itemValue="R" itemLabel="Role"/>
+        <f:selectItem itemValue="E" itemLabel="Employee"/>
+        <f:ajax event="change" listener="#{user.chargeTypeChange}" execute="@this" render="perfbyselection"/>
+    </h:selectOneMenu>
+    <h:panelGroup id="perfbyselection">
+        <h:selectOneMenu id="performedbyroleid" rendered="#{user.showLevel}">
+            <f:selectItem itemLabel="- Choose One -" itemValue=""/>
+        </h:selectOneMenu>
+    </h:panelGroup>
+
+
+
+
+</h:body>
+</html>

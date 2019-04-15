@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.heylee</groupId>
+    <artifactId>demo-modules</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>demo-module-web</module>
+        <module>demo-module-test</module>
+        <module>demo-module-077-web</module>
+        <module>demo-module-070-timer</module>
+        <module>demo-module-070-schedule</module>
+        <module>demo-module-080-war</module>
+        <module>demo-module-081-spring</module>
+        <module>demo-module-081-spring-2</module>
+        <module>demo-module-088-springMVC</module>
+        <module>demo-module-088-spring-MVC-rest</module>
+        <module>demo-module-089-SSH</module>
+        <module>demo-module-090-JSF</module>
+    </modules>
+
+
+</project>

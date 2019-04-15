@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-module-070-schedule" />
+        <module name="demo-module-070-timer" />
+        <module name="demo-module-077-web" />
+        <module name="demo-module-080-war" />
+        <module name="demo-module-081-spring" />
+        <module name="demo-module-081-spring-2" />
+        <module name="demo-module-088-spring-MVC-rest" />
+        <module name="demo-module-088-springMVC" />
+        <module name="demo-module-089-SSH" />
+        <module name="demo-module-090-JSF" />
+        <module name="demo-module-test" />
+        <module name="demo-module-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="$070-module-web" target="1.5" />
+      <module name="$077-module-schedule" target="1.5" />
+      <module name="$077-module-timer" target="1.5" />
+      <module name="demo-module-schedule" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

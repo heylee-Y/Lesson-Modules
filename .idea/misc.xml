@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/$070-module-web" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-module-077-web" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-module-080-war" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-module-081-spring" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-module-081-spring-2" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-module-088-spring-MVC-rest" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-module-088-springMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-module-089-SSH" />
+    <file type="web" url="file://$PROJECT_DIR$/demo-module-090-JSF" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/$070-module-web/pom.xml" />
+        <option value="$PROJECT_DIR$/$077-module-schedule/pom.xml" />
+        <option value="$PROJECT_DIR$/$077-module-timer/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-module-schedule/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
