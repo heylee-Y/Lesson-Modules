@@ -21,6 +21,7 @@
         <module>demo-module-088-spring-MVC-rest</module>
         <module>demo-module-089-SSH</module>
         <module>demo-module-090-JSF</module>
+        <module>demo-module-099-Tansaction</module>
     </modules>
 
 

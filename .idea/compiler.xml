@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo-module-070-schedule" />
-        <module name="demo-module-070-timer" />
         <module name="demo-module-077-web" />
-        <module name="demo-module-080-war" />
         <module name="demo-module-081-spring" />
-        <module name="demo-module-081-spring-2" />
         <module name="demo-module-088-spring-MVC-rest" />
-        <module name="demo-module-088-springMVC" />
-        <module name="demo-module-089-SSH" />
         <module name="demo-module-090-JSF" />
-        <module name="demo-module-test" />
+        <module name="demo-module-070-schedule" />
+        <module name="demo-module-080-war" />
+        <module name="demo-module-088-springMVC" />
+        <module name="demo-module-081-spring-2" />
+        <module name="demo-module-088-springMVC-rest" />
+        <module name="demo-module-089-SSH" />
         <module name="demo-module-web" />
+        <module name="demo-module-test" />
+        <module name="demo-module-070-timer" />
+        <module name="demo-module-099-Tansaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
