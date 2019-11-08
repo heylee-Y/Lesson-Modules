@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>JSF</h3>
+<h3>JSF</h3>
 </body>
 </html>

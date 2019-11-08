@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="JUnitTest.DemoUserDaoTest" time="1.075" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="JUnitTest.DemoUserDaoTest" time="1.209" errors="1" skipped="0">
     <properties>
         <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
         <property name="sun.boot.library.path"
-                  value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
-        <property name="java.vm.version" value="25.181-b13"/>
+                  value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib"/>
+        <property name="java.vm.version" value="25.211-b12"/>
         <property name="gopherProxySet" value="false"/>
         <property name="java.vm.vendor" value="Oracle Corporation"/>
         <property name="maven.multiModuleProjectDirectory"
-                  value="/Users/heylee/Hubs/Art/Project/Lesson-modules/demo-module-080-war"/>
+                  value="/Users/heylee/Hubs/Art/A_Projects/Lesson-Modules/demo-module-080-war"/>
         <property name="java.vendor.url" value="http://java.oracle.com/"/>
         <property name="path.separator" value=":"/>
         <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -18,29 +18,28 @@
         <property name="sun.java.launcher" value="SUN_STANDARD"/>
         <property name="sun.os.patch.level" value="unknown"/>
         <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-        <property name="user.dir" value="/Users/heylee/Hubs/Art/Project/Lesson-modules/demo-module-080-war"/>
-        <property name="java.runtime.version" value="1.8.0_181-b13"/>
+        <property name="user.dir" value="/Users/heylee/Hubs/Art/A_Projects/Lesson-Modules/demo-module-080-war"/>
+        <property name="java.runtime.version" value="1.8.0_211-b12"/>
         <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
         <property name="java.endorsed.dirs"
-                  value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
+                  value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/endorsed"/>
         <property name="os.arch" value="x86_64"/>
-        <property name="java.io.tmpdir" value="/var/folders/zp/wz9f287x0tb9gv77lb9fw4vh0000gn/T/"/>
+        <property name="java.io.tmpdir" value="/var/folders/4_/4m25134d09d40g1wgh68bwr00000gn/T/"/>
         <property name="line.separator" value="
 "/>
         <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-        <property name="https.proxyHost" value="127.0.0.1"/>
         <property name="os.name" value="Mac OS X"/>
-        <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.4/libexec/bin/m2.conf"/>
+        <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.1/libexec/bin/m2.conf"/>
         <property name="sun.jnu.encoding" value="UTF-8"/>
         <property name="java.library.path"
                   value="/Users/heylee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-        <property name="http.proxyPort" value="50018"/>
-        <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.4/libexec/conf"/>
+        <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.1/libexec/conf"/>
         <property name="java.specification.name" value="Java Platform API Specification"/>
         <property name="java.class.version" value="52.0"/>
         <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
         <property name="os.version" value="10.14.4"/>
-        <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.4/libexec/lib/jansi-native"/>
+        <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.1/libexec/lib/jansi-native"/>
+        <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
         <property name="user.home" value="/Users/heylee"/>
         <property name="user.timezone" value="Asia/Shanghai"/>
         <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
@@ -48,29 +47,129 @@
         <property name="file.encoding" value="UTF-8"/>
         <property name="user.name" value="heylee"/>
         <property name="java.class.path"
-                  value="/usr/local/Cellar/maven/3.5.4/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+                  value="/usr/local/Cellar/maven/3.6.1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
         <property name="java.vm.specification.version" value="1.8"/>
         <property name="sun.arch.data.model" value="64"/>
-        <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
-        <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+        <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre"/>
+        <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
         <property name="java.specification.vendor" value="Oracle Corporation"/>
         <property name="user.language" value="en"/>
         <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
         <property name="java.vm.info" value="mixed mode"/>
-        <property name="java.version" value="1.8.0_181"/>
+        <property name="java.version" value="1.8.0_211"/>
         <property name="java.ext.dirs"
-                  value="/Users/heylee/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-        <property name="http.proxyHost" value="127.0.0.1"/>
+                  value="/Users/heylee/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
         <property name="sun.boot.class.path"
-                  value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/classes"/>
+                  value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/classes"/>
         <property name="java.vendor" value="Oracle Corporation"/>
-        <property name="maven.home" value="/usr/local/Cellar/maven/3.5.4/libexec"/>
+        <property name="maven.home" value="/usr/local/Cellar/maven/3.6.1/libexec"/>
         <property name="file.separator" value="/"/>
         <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
         <property name="sun.cpu.endian" value="little"/>
         <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-        <property name="https.proxyPort" value="50018"/>
+        <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+        <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
         <property name="sun.cpu.isalist" value=""/>
     </properties>
-    <testcase classname="JUnitTest.DemoUserDaoTest" name="testQueryAll" time="1.075"/>
+    <testcase classname="JUnitTest.DemoUserDaoTest" name="testQueryAll" time="1.209">
+        <error message="
+### Error querying database.  Cause: org.postgresql.util.PSQLException: ERROR: relation &quot;demo.demo_user&quot; does not exist
+  Position: 15
+### The error may exist in mybatis/mapper/DemoUserMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from demo.demo_user
+### Cause: org.postgresql.util.PSQLException: ERROR: relation &quot;demo.demo_user&quot; does not exist
+  Position: 15" type="org.apache.ibatis.exceptions.PersistenceException">
+            org.apache.ibatis.exceptions.PersistenceException:
+            ### Error querying database. Cause: org.postgresql.util.PSQLException: ERROR: relation &quot;demo.demo_user&quot;
+            does not exist
+            Position: 15
+            ### The error may exist in mybatis/mapper/DemoUserMapper.xml
+            ### The error may involve defaultParameterMap
+            ### The error occurred while setting parameters
+            ### SQL: select * from demo.demo_user
+            ### Cause: org.postgresql.util.PSQLException: ERROR: relation &quot;demo.demo_user&quot; does not exist
+            Position: 15
+            at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+            at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+            at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+            at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+            at dao.DemoUserDao.getAllUsers(DemoUserDao.java:43)
+            at JUnitTest.DemoUserDaoTest.testQueryAll(DemoUserDaoTest.java:21)
+            at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+            at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+            at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+            at java.lang.reflect.Method.invoke(Method.java:498)
+            at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+            at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+            at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+            at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+            at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+            at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+            at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+            at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+            at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+            at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+            at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+            at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+            at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+            at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+            at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+            at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+            at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+            at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+            at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+            at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+            at java.lang.reflect.Method.invoke(Method.java:498)
+            at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+            at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+            at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+            at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+            at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+            Caused by: org.postgresql.util.PSQLException: ERROR: relation &quot;demo.demo_user&quot; does not exist
+            Position: 15
+            at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2102)
+            at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1835)
+            at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+            at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+            at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+            at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:381)
+            at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+            at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+            at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+            at java.lang.reflect.Method.invoke(Method.java:498)
+            at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+            at com.sun.proxy.$Proxy23.execute(Unknown Source)
+            at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+            at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+            at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+            at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+            at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+            at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+            at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+            at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+            ... 34 more
+        </error>
+        <system-out>2019-05-14 14:44:07.426 DEBUG HeyleedeMacBook-Pro.local --- [ main] o.a.i.l.LogFactory : Logging
+            initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
+            2019-05-14 14:44:07.477 DEBUG HeyleedeMacBook-Pro.local --- [ main] o.a.i.d.p.PooledDataSource :
+            PooledDataSource forcefully closed/removed all connections.
+            2019-05-14 14:44:07.478 DEBUG HeyleedeMacBook-Pro.local --- [ main] o.a.i.d.p.PooledDataSource :
+            PooledDataSource forcefully closed/removed all connections.
+            2019-05-14 14:44:07.478 DEBUG HeyleedeMacBook-Pro.local --- [ main] o.a.i.d.p.PooledDataSource :
+            PooledDataSource forcefully closed/removed all connections.
+            2019-05-14 14:44:07.478 DEBUG HeyleedeMacBook-Pro.local --- [ main] o.a.i.d.p.PooledDataSource :
+            PooledDataSource forcefully closed/removed all connections.
+            2019-05-14 14:44:07.549 DEBUG HeyleedeMacBook-Pro.local --- [ main] o.a.i.t.j.JdbcTransaction : Opening JDBC
+            Connection
+            2019-05-14 14:44:07.635 DEBUG HeyleedeMacBook-Pro.local --- [ main] o.a.i.d.p.PooledDataSource : Created
+            connection 1819776360.
+            2019-05-14 14:44:07.636 DEBUG HeyleedeMacBook-Pro.local --- [ main] o.a.i.t.j.JdbcTransaction : Setting
+            autocommit to false on JDBC Connection [org.postgresql.jdbc4.Jdbc4Connection@6c779568]
+            2019-05-14 14:44:07.638 DEBUG HeyleedeMacBook-Pro.local --- [ main] m.D.queryAll : ==&gt; Preparing: select
+            * from demo.demo_user
+            2019-05-14 14:44:07.673 DEBUG HeyleedeMacBook-Pro.local --- [ main] m.D.queryAll : ==&gt; Parameters:
+        </system-out>
+    </testcase>
 </testsuite>

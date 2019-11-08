@@ -1,5 +1,8 @@
 package spring.pojo;
 
+import org.springframework.stereotype.Component;
+
+//@Component
 public class Source {
 
     private String fruit;

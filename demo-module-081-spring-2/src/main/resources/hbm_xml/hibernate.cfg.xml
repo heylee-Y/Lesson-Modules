@@ -11,7 +11,7 @@
         <property name="connection.password">postgres</property>
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
-        <!--<mapping resource="hbm_xml/demoUser.hbm.xml"/>-->
+        <mapping resource="hbm_xml/demoUser.hbm.xml"/>
         <mapping class="model.DemoUser"/>
         <mapping class="model.Employee"/>
         <mapping class="model.Department"/>

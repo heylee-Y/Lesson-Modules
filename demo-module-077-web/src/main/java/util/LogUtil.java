@@ -10,7 +10,7 @@ public class LogUtil {
         return LoggerFactory.getLogger(LogEnum.BUSINESS.getCategory());
     }
 
-    public static Logger getPlarformLogger() {
+    public static Logger getPlatformLogger() {
         return LoggerFactory.getLogger(LogEnum.PLATFORM.getCategory());
     }
 

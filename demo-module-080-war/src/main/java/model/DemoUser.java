@@ -58,4 +58,9 @@ public class DemoUser {
     public void setComment(String comment) {
         this.comment = comment;
     }
+
+    @Override
+    public String toString() {
+        return this.name + " ---- " + this.role;
+    }
 }

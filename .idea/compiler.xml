@@ -10,12 +10,14 @@
         <module name="demo-module-081-spring" />
         <module name="demo-module-088-spring-MVC-rest" />
         <module name="demo-module-090-JSF" />
+        <module name="demo-module-089-SSH" />
         <module name="demo-module-070-schedule" />
         <module name="demo-module-080-war" />
         <module name="demo-module-088-springMVC" />
         <module name="demo-module-081-spring-2" />
+        <module name="demo-module-060-RPC" />
         <module name="demo-module-088-springMVC-rest" />
-        <module name="demo-module-089-SSH" />
+        <module name="demo-module-060-class-load" />
         <module name="demo-module-web" />
         <module name="demo-module-test" />
         <module name="demo-module-070-timer" />
@@ -28,5 +30,10 @@
       <module name="$077-module-timer" target="1.5" />
       <module name="demo-module-schedule" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-module-060-class-load" options="-parameters" />
+    </option>
   </component>
 </project>

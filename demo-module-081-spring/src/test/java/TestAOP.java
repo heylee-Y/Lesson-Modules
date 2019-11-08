@@ -12,8 +12,8 @@ public class TestAOP {
 
 //        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-//        Source source = (Source) context.getBean("source");
         Source source = (Source) context.getBean("source");
+//        Source source = (Source) context.getBean("sourceProxy");
         System.out.println("*************************");
         source.printFruit();
         System.out.println("*************************");

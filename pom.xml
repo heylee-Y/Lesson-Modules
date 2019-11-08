@@ -22,6 +22,7 @@
         <module>demo-module-089-SSH</module>
         <module>demo-module-090-JSF</module>
         <module>demo-module-099-Tansaction</module>
+        <module>demo-module-060-RPC</module>
     </modules>
 
 

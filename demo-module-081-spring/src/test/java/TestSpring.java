@@ -24,25 +24,25 @@ public class TestSpring {
 
         JuiceMaker juiceMaker = (JuiceMaker) context.getBean("juiceMaker");
         System.out.println(juiceMaker.makeJuice());
-
-        DemoUser demoUser = new DemoUser();
-        demoUser.setId(7L);
-        demoUser.setName("haili");
-        demoUser.setRole("admin");
-        demoUser.setComment("Aha!!!");
-        DemoUserDaoImpl demoUserDao = (DemoUserDaoImpl) context.getBean("demoUserDao");
-        demoUserDao.insert(demoUser);
-
-        DemoUser demoUser1 = demoUserDao.findUserById(1L);
-        System.out.println(demoUser1.getName() + "***" + demoUser1.getUpdateTime());
-
-        List<DemoUser> list = demoUserDao.findAllUsers();
-        for (DemoUser user : list) {
-            System.out.println(user.getName() + " --- " + user.getUpdateTime());
-        }
-
-        Customer customer = (Customer) context.getBean("customerBean");
-        System.out.println(customer.getItemName() + "  " + customer.getItem().getQty());
+//
+//        DemoUser demoUser = new DemoUser();
+//        demoUser.setId(7L);
+//        demoUser.setName("haili");
+//        demoUser.setRole("admin");
+//        demoUser.setComment("Aha!!!");
+//        DemoUserDaoImpl demoUserDao = (DemoUserDaoImpl) context.getBean("demoUserDao");
+//        demoUserDao.insert(demoUser);
+//
+//        DemoUser demoUser1 = demoUserDao.findUserById(1L);
+//        System.out.println(demoUser1.getName() + "***" + demoUser1.getUpdateTime());
+//
+//        List<DemoUser> list = demoUserDao.findAllUsers();
+//        for (DemoUser user : list) {
+//            System.out.println(user.getName() + " --- " + user.getUpdateTime());
+//        }
+//
+//        Customer customer = (Customer) context.getBean("customerBean");
+//        System.out.println(customer.getItemName() + "  " + customer.getItem().getQty());
 
         ((ClassPathXmlApplicationContext) context).close();
     }

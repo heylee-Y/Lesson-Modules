@@ -12,7 +12,12 @@
 
     <context:annotation-config/>
     <context:component-scan base-package="spring"/>
-    <!--<aop:aspectj-autoproxy />-->
+    <!--    通过注解实现  -->
+    <aop:aspectj-autoproxy />
+
+
+
+
 
     <bean name="logAspect" class="spring.aspectJ.LoggingAspect"/>
 
@@ -25,27 +30,31 @@
     <bean name="hijackBeforeMethodBean" class="spring.aop.HijackBeforeMethod"/>
     <bean name="hijackAroundMethodBeanAdvice" class="spring.aop.HijackAroundMethod"/>
 
+    <!--    pointcut 可以指定切入的方法 -->
     <bean name="sourceCut" class="org.springframework.aop.support.NameMatchMethodPointcut">
         <property name="mappedName" value="printFruit"/>
     </bean>
+
+    <!--bean 关联-->
     <bean name="sourceAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
         <property name="pointcut" ref="sourceCut"/>
         <property name="advice" ref="hijackAroundMethodBeanAdvice"/>
     </bean>
 
+    <!--    手动创建一个代理bean(ProxyFactryBean)，对每个Bean需要AOP支持。   -->
     <!--<bean name="sourceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
         <property name="target" ref="source"/>
         <property name="interceptorNames">
             <list>
-                &lt;!&ndash;<value>hijackBeforeMethodBean</value>&ndash;&gt;
-                &lt;!&ndash;<value>hijackAroundMethodBeanAdvice</value>&ndash;&gt;
+                <value>hijackBeforeMethodBean</value>
+                <value>hijackAroundMethodBeanAdvice</value>
                 <value>sourceAdvisor</value>
             </list>
         </property>
     </bean>-->
 
-    <!--
-    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+    <!--    在自动代理机制，只需要创建一个的 BeanNameAutoProxyCreator，并包含所有你的bean(通过bean的名字，或正则表达式名)和“advisor” 作为一个单位。-->
+    <!--<bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
         <property name="beanNames">
             <list>
                 <value>*rce</value>
@@ -56,27 +65,38 @@
                 <value>sourceAdvisor</value>
             </list>
         </property>
-    </bean>
-    -->
+    </bean>-->
 
-    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+    <!--DefaultAdvisorAutoProxyCreator 如果有 bean 相关连，Spring会自动创建一个代理。-->
+<!--    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>-->
+
+
+
+
+
+
+
+
 
     <!--自动装配 bean-->
     <!-- 1. no manual ref-->
-    <!--
-    <bean name="juiceMaker" class="spring.pojo.JuiceMaker">
-        <property name="source" ref="source"/>
-    </bean>
-    -->
+    <!--    <bean name="juiceMaker" class="spring.pojo.JuiceMaker">-->
+    <!--        <property name="source" ref="source"/>-->
+    <!--    </bean>-->
 
     <!-- 2. byName -->
-    <!--<bean name="juiceMaker" class="spring.pojo.JuiceMaker" autowire="byName"/>-->
+    <!--    在Spring中，“按名称自动装配”是指，如果一个bean的名称与其他bean属性的名称是一样的，(！！！！setName 主要作用于set方法上！！！！！)那么将自动装配它。-->
+    <!--    <bean name="juiceMaker" class="spring.pojo.JuiceMaker" autowire="byName"/>-->
 
     <!-- 3. byType -->
-    <!--<bean name="juiceMaker" class="spring.pojo.JuiceMaker" autowire="byType"/>-->
+    <!-- 在Spring中，“类型自动装配”的意思是如果一个bean的数据类型与其它bean属性的数据类型相同，将自动兼容装配它。-->
+    <!--    <bean name="juiceMaker" class="spring.pojo.JuiceMaker" autowire="byType"/>-->
+
+    <!-- 4. byConstructor -->
+    <!--    <bean name="juiceMaker" class="spring.pojo.JuiceMaker" autowire="constructor"/>-->
 
     <!-- @AutoWired -->
-    <bean name="juiceMaker" class="spring.pojo.JuiceMaker" init-method="initIt"/>
+    <bean name="juiceMaker" class="spring.pojo.JuiceMaker"/>
 
     <bean name="demoUserDao" class="spring.dao.DemoUserDaoImpl"/>
 

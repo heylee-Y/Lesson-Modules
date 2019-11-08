@@ -18,6 +18,7 @@ public class DemoUser {
     @Column(name = "update_time")
     private Date updateTime;
     private String comment;
+    private Integer version;
 
     public Long getId() {
         return id;
@@ -65,5 +66,18 @@ public class DemoUser {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
+    @Override
+    public String toString() {
+        return this.name + " ----- " + this.role;
     }
 }
