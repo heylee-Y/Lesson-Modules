@@ -31,5 +31,7 @@ public class HelloServlet extends HttpServlet {
         PrintWriter out = servletResponse.getWriter();
         out.println("Aha hi servlet!!!");
 
+
+
     }
 }

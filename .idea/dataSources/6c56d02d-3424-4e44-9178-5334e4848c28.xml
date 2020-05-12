@@ -1,60 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="postgres@localhost">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.16">
     <root id="1">
       <ServerVersion>9.6.5</ServerVersion>
     </root>
     <database id="2" parent="1" name="postgres">
       <ObjectId>12407</ObjectId>
       <Comment>default administrative connection database</Comment>
-      <StateNumber>548</StateNumber>
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>3172</IntrospectionStateNumber>
       <Current>1</Current>
-      <Visible>1</Visible>
     </database>
     <role id="3" parent="1" name="etariffs">
       <ObjectId>33396</ObjectId>
-      <Inherit>1</Inherit>
-      <ConnectionLimit>-1</ConnectionLimit>
     </role>
     <role id="4" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
-      <Inherit>1</Inherit>
-      <ConnectionLimit>-1</ConnectionLimit>
     </role>
     <role id="5" parent="1" name="platform">
       <ObjectId>33397</ObjectId>
-      <Inherit>1</Inherit>
-      <ConnectionLimit>-1</ConnectionLimit>
     </role>
     <role id="6" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
-      <Inherit>1</Inherit>
       <CreateRole>1</CreateRole>
       <CreateDb>1</CreateDb>
       <CanLogin>1</CanLogin>
-      <ConnectionLimit>-1</ConnectionLimit>
       <Replication>1</Replication>
       <BypassRls>1</BypassRls>
     </role>
     <role id="7" parent="1" name="shr_psql_prod">
       <ObjectId>33394</ObjectId>
-      <Inherit>1</Inherit>
-      <ConnectionLimit>-1</ConnectionLimit>
     </role>
     <role id="8" parent="1" name="t2_prod">
       <ObjectId>33395</ObjectId>
-      <Inherit>1</Inherit>
-      <ConnectionLimit>-1</ConnectionLimit>
     </role>
     <schema id="9" parent="2" name="demo">
       <ObjectId>16384</ObjectId>
       <StateNumber>553</StateNumber>
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>3173</IntrospectionStateNumber>
-      <Visible>1</Visible>
     </schema>
     <schema id="10" parent="2" name="information_schema">
       <ObjectId>12119</ObjectId>
@@ -96,14 +81,12 @@
       <IntrospectionTimestamp>2019-03-08.15:42:02.026</IntrospectionTimestamp>
       <IntrospectionStateNumber>3174</IntrospectionStateNumber>
       <Current>1</Current>
-      <Visible>1</Visible>
     </schema>
     <schema id="17" parent="2" name="snap_p2">
       <ObjectId>90112</ObjectId>
       <StateNumber>2733</StateNumber>
       <Owner>shr_psql_prod</Owner>
       <IntrospectionStateNumber>3175</IntrospectionStateNumber>
-      <Visible>1</Visible>
     </schema>
     <access-method id="18" parent="2" name="btree">
       <ObjectId>403</ObjectId>

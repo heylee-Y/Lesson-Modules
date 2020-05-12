@@ -19,6 +19,7 @@
         <module name="demo-module-088-springMVC-rest" />
         <module name="demo-module-060-class-load" />
         <module name="demo-module-web" />
+        <module name="springboot" />
         <module name="demo-module-test" />
         <module name="demo-module-070-timer" />
         <module name="demo-module-099-Tansaction" />
@@ -34,6 +35,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo-module-060-class-load" options="-parameters" />
+      <module name="springboot" options="-parameters" />
     </option>
   </component>
 </project>
