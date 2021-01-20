@@ -14,7 +14,7 @@
 
     <properties>
         <finalName>demo-SSH</finalName>
-        <springVersion>5.1.5.RELEASE</springVersion>
+        <springVersion>5.2.3.RELEASE</springVersion>
     </properties>
 
     <build>
